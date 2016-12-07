@@ -21,6 +21,8 @@
 //// Includes
 ////
 
+#include <stdio.h>	// fixes: "error: ‘stdout / setbuf’ was not declared in this scope"
+
 #include <cstdlib>
 #include <iostream>
 
