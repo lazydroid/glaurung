@@ -1243,7 +1243,7 @@ namespace {
         SafetyTable[i] = Value((int)(100 * a * (i - b)));
     }
 
-    for(i = 0; i < 100; i++)
+    for(i = 0; i < 99; i++)
       if(SafetyTable[i+1] - SafetyTable[i] > maxSlope) {
         for(j = i + 1; j < 100; j++)
           SafetyTable[j] = SafetyTable[j-1] + Value(maxSlope);
